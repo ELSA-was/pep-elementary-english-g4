@@ -1,0 +1,1094 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人教PEP版英语四年级 · 口语开口训练舱</title><style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#FFF9F2;color:#2C2417;line-height:1.75;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+#gate{position:fixed;inset:0;background:#FFF9F2;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
+#gate .box{background:#fff;border:3px solid #2C2417;border-radius:18px;padding:32px 26px;max-width:400px;width:100%;text-align:center;box-shadow:6px 6px 0 #FFD166}
+#gate h2{margin:0 0 10px;font-size:20px}
+#gate p{color:#7A6A55;font-size:14px;margin:0 0 18px}
+#gate input{width:100%;padding:12px;border:2px solid #2C2417;border-radius:10px;font-size:16px;outline:none}
+#gate button{margin-top:14px;width:100%;padding:12px;background:#FF8FA3;border:2px solid #2C2417;border-radius:10px;
+  font-size:16px;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 #2C2417}
+#gate button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #2C2417}
+.err{color:#E4572E;min-height:22px;margin-top:10px;font-size:14px}
+.hero{background:#FFD166;border:3px solid #2C2417;border-radius:18px;padding:22px;box-shadow:5px 5px 0 #2C2417;margin-bottom:18px}
+.hero h1{margin:0 0 6px;font-size:25px;line-height:1.3}
+.hero .tag{color:#6B5B45;font-size:15px}
+.chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:#fff;border:2px solid #2C2417;border-radius:999px;padding:3px 11px;font-size:13px}
+.toc{background:#fff;border:3px solid #2C2417;border-radius:14px;padding:14px 16px;margin-bottom:18px}
+.toc b{display:block;margin-bottom:8px}
+.toc-links{display:flex;flex-wrap:wrap;gap:8px}
+.toc-links a{color:#2C2417;text-decoration:none;font-size:13.5px;background:#FFF3D6;border:1.5px solid #2C2417;
+  border-radius:8px;padding:3px 9px}
+.card{background:#fff;border:3px solid #2C2417;border-radius:16px;padding:18px;margin-bottom:18px;
+  box-shadow:4px 4px 0 #FFD166}
+.card h2{margin:0 0 4px;font-size:20px}
+.card .en{color:#7A6A55;font-size:14px;margin-bottom:4px}
+.card .goal{background:#FFF3D6;border-radius:10px;padding:9px 12px;font-size:14.5px;margin:10px 0}
+h3{font-size:16px;margin:18px 0 8px;padding-left:9px;border-left:5px solid #FF8FA3}
+.vocab{display:flex;flex-wrap:wrap;gap:7px}
+.vocab span{background:#F6F1E7;border:1.5px solid #2C2417;border-radius:8px;padding:3px 9px;font-size:13.5px}
+.vocab span i{color:#7A6A55;font-style:normal;font-size:12.5px}
+ol.sent{margin:0;padding-left:22px}
+ol.sent li{margin-bottom:7px}
+ol.sent .zh{color:#7A6A55;font-size:14px}
+.dlg .line{margin-bottom:9px;padding:8px 11px;border-radius:10px;background:#F6F1E7}
+.dlg .line.me{background:#FFE3E8}
+.dlg .role{font-size:12.5px;color:#7A6A55;margin-bottom:2px}
+.dlg .zh{color:#7A6A55;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1.5px solid #2C2417;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#FFD166}
+details{background:#FBF7EF;border:2px solid #2C2417;border-radius:12px;padding:0;margin:10px 0}
+details summary{cursor:pointer;padding:10px 13px;font-weight:700;font-size:15px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸ ";color:#FF8FA3}
+details[open] summary::before{content:"▾ "}
+details .body{padding:2px 14px 14px;font-size:14.5px}
+.prompt{background:#2C2417;color:#FFF3D6;border-radius:12px;padding:13px;font-size:13.5px;white-space:pre-wrap;
+  font-family:ui-monospace,Menlo,Consolas,monospace;line-height:1.65}
+.copybtn{margin-top:9px;padding:7px 15px;background:#8AC926;border:2px solid #2C2417;border-radius:9px;
+  font-size:13.5px;font-weight:700;cursor:pointer;box-shadow:2px 2px 0 #2C2417}
+.copybtn:active{transform:translate(2px,2px);box-shadow:0 0 0 #2C2417}
+.media{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.media video,.media .aud{flex:1 1 260px;min-width:0}
+.media video{width:100%;border:2px solid #2C2417;border-radius:10px;background:#000}
+.media audio{width:100%}
+.mlabel{font-size:12.5px;color:#7A6A55;margin-bottom:4px}
+.sect{background:#FFE3E8;border:3px solid #2C2417;border-radius:16px;padding:18px;margin:20px 0;box-shadow:4px 4px 0 #8AC926}
+.sect h2{margin:0 0 10px;font-size:21px}
+.note{background:#FFF3D6;border-left:5px solid #FFD166;border-radius:8px;padding:9px 12px;font-size:14px;margin:10px 0}
+footer{text-align:center;color:#7A6A55;font-size:13px;margin-top:30px;padding-top:16px;border-top:2px dashed #D9CFBC}
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);background:#2C2417;color:#fff;
+  padding:10px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.on{opacity:1}
+@media(max-width:680px){body{font-size:15.5px}.hero h1{font-size:21px}}
+</style></head><body>
+<div id="gate">
+  <div class="box">
+    <h2>🔐 请输入访问密码</h2>
+    <p>购买后密码会单独发给你。本页为私有交付页，请勿外传。</p>
+    <input id="pw" type="password" placeholder="输入密码" autocomplete="off">
+    <button onclick="tryGate()">进入产品</button>
+    <div class="err" id="err"></div>
+  </div>
+</div>
+<script>
+/* 校验值只存不可逆的加盐 SHA-256，页面内不含密码明文、也不含可逆编码 */
+const SALT="39ac3189ce9ee947", HASH="e624b33e3aa82517260d7d5c847f200c25cba439bdcc6682c1cc098cee66d970";
+async function sha256(t){
+  const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));
+  return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join("");
+}
+function unlock(){document.getElementById("gate").style.display="none";
+  try{sessionStorage.setItem("sk_product_34", "1");}catch(e){}}
+async function tryGate(){
+  const v=document.getElementById("pw").value;
+  if(await sha256(SALT+":"+v)===HASH){unlock();}
+  else{document.getElementById("err").textContent="密码错误，请核对后重试。";}
+}
+document.getElementById("pw").addEventListener("keydown",function(e){if(e.key==="Enter")tryGate();});
+try{if(sessionStorage.getItem("sk_product_34")==="1"){document.getElementById("gate").style.display="none";}}catch(e){}
+</script>
+
+<div class="wrap">
+<header class="hero">
+<h1>人教PEP版英语四年级 · 口语开口训练舱</h1>
+<div class="tag">四年级孩子从会答一句到能说一段</div>
+<div class="chips"><span class="chip">人教PEP</span><span class="chip">四年级</span><span class="chip">会答更会问</span><span class="chip">豆包陪练</span></div>
+</header>
+<nav class="toc"><b>📑 本页目录</b><div class="toc-links">
+<a href="#intro">📖 这是什么</a><a href="#howto">🚀 怎么用</a>
+<a href="#u1">单元1 学校科目与课</a>
+<a href="#u2">单元2 时间与作息</a>
+<a href="#u3">单元3 天气与季节</a>
+<a href="#u4">单元4 职业与理想</a>
+<a href="#u5">单元5 食物与健康</a>
+<a href="#u6">单元6 运动与爱好</a>
+<a href="#u7">单元7 方位与问路</a>
+<a href="#u8">单元8 节日与庆祝</a>
+<a href="#placement">🎯 口语诊断与分级</a><a href="#project">🗺️ 主题口语项目</a>
+<a href="#feedback">💬 口语反馈助手</a><a href="#prompts">🤖 豆包指令包</a>
+</div></nav>
+<div class="card" id="intro"><h2>这是什么？</h2><p>专为人教PEP版四年级孩子设计的英语开口训练舱。8 个同步单元——课程表与科目、时间与作息、天气与季节、职业与理想、食物与健康、运动与爱好、方位与问路、节日与庆祝。相比三年级，每一句都多走一步：回答问题之后要给出理由，描述图片之后要做一个推断。每单元 8 句核心句、1 段同伴对话、1 个看图说话任务、1 个原创小故事，全部配豆包陪练指令，每天 15 分钟，让孩子从&quot;会答一句&quot;走到&quot;能说一段&quot;。</p><h3>适合谁</h3><p></p></div>
+<div class="card" id="howto"><h2>怎么用（3 步）</h2><ol class="sent"><li>打开本页，选一个单元</li><li>先听句子跟读 3 遍，再看着中文说出英文</li><li>复制该单元的豆包指令，让豆包当陪练，孩子开口回答</li></ol></div>
+<div class="card" id="u1">
+<h2>单元 1 · 学校科目与课程表</h2>
+<div class="en">School Subjects and Timetable</div>
+<div class="goal"><b>目标：</b>会看课程表说出安排、说出喜欢或觉得难的科目并给出理由</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit01.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit01.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>Which subject do you like best? I like science best.<div class="zh">你最喜欢哪一科？我最喜欢科学。</div></li>
+<li>We have Chinese and English every morning.<div class="zh">我们每天上午都有语文和英语。</div></li>
+<li>Science is on Wednesday afternoon, and I like it.<div class="zh">科学课在星期三下午，我很喜欢。</div></li>
+<li>Maths is difficult, but I practise every day.<div class="zh">数学很难，但我每天都练习。</div></li>
+<li>We have a break between the second and third classes.<div class="zh">我们在第二节和第三节课之间休息。</div></li>
+<li>I often read in the library after lunch.<div class="zh">我午饭后常常在图书馆看书。</div></li>
+<li>My classmates help me with my English words.<div class="zh">我的同学帮我记英语单词。</div></li>
+<li>What do you usually do during the break?<div class="zh">课间休息你通常做什么？</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>timetable <i>课程表</i></span>
+<span>subject <i>科目</i></span>
+<span>Monday <i>星期一</i></span>
+<span>Wednesday <i>星期三</i></span>
+<span>Friday <i>星期五</i></span>
+<span>break <i>课间休息</i></span>
+<span>interesting <i>有趣的</i></span>
+<span>difficult <i>难的</i></span>
+<span>practise <i>练习</i></span>
+<span>learn <i>学习</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>Our timetable changes every term.</li>
+<li>Which subject do you like best?</li>
+<li>We have music on Monday.</li>
+<li>Science is on Wednesday afternoon.</li>
+<li>We finish school early on Friday.</li>
+<li>We have a break at ten.</li>
+<li>Science is interesting and useful.</li>
+<li>Maths is difficult but I like it.</li>
+<li>I practise the piano after dinner.</li>
+<li>We learn many new words.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Li</div>Look at the new timetable on the wall.<div class="zh">看看墙上那张新的课程表。</div></div>
+<div class="line me"><div class="role">Lily</div>We have science on Wednesday afternoon.<div class="zh">我们星期三下午有科学课。</div></div>
+<div class="line"><div class="role">Miss Li</div>Do you like science, Tom?<div class="zh">汤姆，你喜欢科学吗？</div></div>
+<div class="line me"><div class="role">Tom</div>Yes. It is interesting but a little difficult.<div class="zh">喜欢。它很有趣，但有点难。</div></div>
+<div class="line"><div class="role">Lily</div>I like English best. We learn many new words.<div class="zh">我最喜欢英语。我们学很多新单词。</div></div>
+<div class="line me"><div class="role">Miss Li</div>What do you do during the break?<div class="zh">课间休息你们做什么？</div></div>
+<div class="line"><div class="role">Tom</div>I play football with my classmates in the playground.<div class="zh">我和同学在操场上踢足球。</div></div>
+<div class="line me"><div class="role">Lily</div>I often read story books in the school library.<div class="zh">我常常在学校图书馆读故事书。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit01.svg" alt="单元1看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一间教室：墙上贴着一张课程表，桌上摆着科学课用的放大镜、几片树叶和一个玻璃杯，两个孩子凑在课程表前看，窗边有一个男孩在读书。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>墙上贴着一张课程表</td><td>Maybe they have science today, because there are leaves on the desk.</td></tr>
+<tr><td>桌上有一个放大镜和几片树叶</td><td>I think the boy likes reading, because he reads during the break.</td></tr>
+<tr><td>桌上有一个玻璃杯</td><td></td></tr>
+<tr><td>两个孩子在看课程表</td><td></td></tr>
+<tr><td>窗边有一个男孩在读书</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>Which subject do you find difficult? What do you do about it?</div>
+<div class="note"><b>无法确认：</b>我们看不清课程表上的具体时间，也听不到他们在说什么</div>
+<div class="note"><b>本单元语言点：</b>We have ... on ... / It is ... but ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出人和物：a timetable、a magnifier、some leaves、a boy</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：I can see ___. / We have ___ on ___. / He is ___ing.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 timetable / leaves / science / library，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;墙上—桌上—窗边&quot;顺序说 6-10 句，用上一个连接词和一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：Which subject is difficult for you? Why?</td></tr>
+</table>
+<div class="note"><b>句框：</b>There is a ___ on the desk.<br>We have ___ on ___ afternoon.<br>The boy is ___ing by the window.<br>Maybe they have ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in the classroom?<br>What is on the desk?<br>What are the two children doing?<br>Which subject do they have today? Why do you think so?<br>Which subject do you like best? Why?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>能说出 4 个以上真实存在的事物</td><td>需要提示才能说出 1-2 个</td></tr>
+<tr><td>描述顺序</td><td>按空间顺序推进，不来回跳</td><td>想到什么说什么，听的人跟不上</td></tr>
+<tr><td>句子完整</td><td>用完整句，主谓齐全</td><td>只说单词或短语</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>把猜测说成事实</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Science Leaf</b><br>Tom finds a red leaf on the way to school.<br>He puts it on his desk.<br>Miss Li sees it in science class.<br>She says, &quot;Leaves change colour in autumn.&quot;<br>Tom draws the leaf in his notebook.<br>He likes science more now.</div>
+<div class="note"><b>中文大意：</b>汤姆在上学路上捡到一片红叶，把它放在桌上。科学课上李老师看到了，说&quot;树叶在秋天会变色&quot;。汤姆把这片叶子画进了笔记本，从此更喜欢科学了。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom，一个四年级男孩，和教科学的 Miss Li</td></tr>
+<tr><td>想要什么</td><td>想知道这片叶子为什么会变红</td></tr>
+<tr><td>遇到问题</td><td>汤姆觉得科学又难又远，不敢提问</td></tr>
+<tr><td>如何解决</td><td>他把叶子带进课堂，老师借着它讲了一个知识点</td></tr>
+<tr><td>结果与变化</td><td>汤姆开始主动观察，也更愿意学科学了</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Tom finds a red leaf. → He puts it on his desk. → Miss Li sees it in class. → She explains why leaves change colour. → Tom draws the leaf in his notebook.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>Miss Li sees it in class.<br>Tom finds a red leaf.<br>Tom draws the leaf in his notebook.<br>She explains why leaves change colour.</div>
+<div class="note"><b>关键词：</b>leaf / red / science / notebook / autumn</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看着故事图，跟着老师说关键句：He likes science more now.</td></tr>
+<tr><td><b>L2</b></td><td>看着图，用句框补全：Tom finds a ___. Miss Li says, &quot;___.&quot;</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 leaf / science / autumn / notebook，按顺序说 6 句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（人物—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Science Leaf》独立复述，并加一句自己观察到的小发现</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Tom finds ___.<br>Then, he puts it ___.<br>After that, Miss Li says, &quot;___.&quot;<br>Finally, Tom draws ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那片叶子的视角讲：I fall from a tree in autumn.<br>说感受：汤姆为什么更喜欢科学了？从故事里找证据<br>新结局：如果汤姆把叶子随手扔掉了，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db1">请你扮演一位四年级的科学老师，和我的孩子练习&quot;说科目与课程表&quot;。规则：1）每次只问一个问题，语速中等，说完等孩子回答；2）孩子答完，你追问一句 Why?，引导他说出理由；3）理由说不完整时，给两个选项让他选，比如&quot;是有趣还是不难？&quot;；4）重点练 We have ... on ... / I like ... best, because ... / It is difficult but ...；5）最后让孩子说出自己一周的课表安排，说不出给句框；6）全程不批评、不纠错音，只鼓励他把句子说完整。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db1").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u2">
+<h2>单元 2 · 时间与作息</h2>
+<div class="en">Time and Daily Routines</div>
+<div class="goal"><b>目标：</b>会说出一天的作息，会用 usually / always / never 说频率</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit02.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit02.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I get up at half past six every morning.<div class="zh">我每天早上六点半起床。</div></li>
+<li>School starts at eight o&#x27;clock, so I hurry.<div class="zh">学校八点上课，所以我很赶。</div></li>
+<li>It takes me fifteen minutes to walk to school.<div class="zh">我步行上学要花十五分钟。</div></li>
+<li>I usually do my homework before dinner.<div class="zh">我通常在晚饭前写作业。</div></li>
+<li>I always brush my teeth before I sleep.<div class="zh">我睡觉前总是刷牙。</div></li>
+<li>I never watch TV on school days.<div class="zh">上学日我从不看电视。</div></li>
+<li>We arrive at school early and read quietly.<div class="zh">我们很早到校，然后安静地读书。</div></li>
+<li>What time do you usually go to bed?<div class="zh">你通常几点睡觉？</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>routine <i>作息</i></span>
+<span>o&#x27;clock <i>…点钟</i></span>
+<span>half past <i>…点半</i></span>
+<span>usually <i>通常</i></span>
+<span>always <i>总是</i></span>
+<span>never <i>从不</i></span>
+<span>early <i>早的</i></span>
+<span>hurry <i>匆忙</i></span>
+<span>minute <i>分钟</i></span>
+<span>tired <i>累的</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>My daily routine is quite busy.</li>
+<li>School starts at eight o&#x27;clock.</li>
+<li>I get up at half past six.</li>
+<li>I usually walk to school.</li>
+<li>I always brush my teeth before bed.</li>
+<li>I never go to bed late.</li>
+<li>We arrive at school early.</li>
+<li>I hurry to school at seven forty.</li>
+<li>It takes me fifteen minutes.</li>
+<li>I feel tired after PE class.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Mum</div>Lily, it is half past six. Time to get up.<div class="zh">莉莉，六点半了。该起床了。</div></div>
+<div class="line me"><div class="role">Lily</div>Five more minutes, please. I am still tired.<div class="zh">再睡五分钟吧。我还困着呢。</div></div>
+<div class="line"><div class="role">Mum</div>You have PE today. Please do not be late.<div class="zh">你今天有体育课。请别迟到。</div></div>
+<div class="line me"><div class="role">Lily</div>OK. What time does school start?<div class="zh">好吧。学校几点开始上课？</div></div>
+<div class="line"><div class="role">Mum</div>School starts at eight o&#x27;clock.<div class="zh">学校八点开始上课。</div></div>
+<div class="line me"><div class="role">Lily</div>It takes me fifteen minutes to walk there.<div class="zh">我走到那儿要十五分钟。</div></div>
+<div class="line"><div class="role">Mum</div>Then hurry up and finish your breakfast.<div class="zh">那就快点把早饭吃完。</div></div>
+<div class="line me"><div class="role">Lily</div>I will. I usually walk there with Tom.<div class="zh">我会的。我通常和汤姆一起走。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit02.svg" alt="单元2看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一个孩子早晨的房间：床头闹钟指着六点半，椅子搭着校服，桌上有一碗面条，一个男孩一边看钟一边系鞋带，窗外天还没全亮。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>闹钟指着六点半</td><td>Maybe he will be late, because he is still tying his shoes.</td></tr>
+<tr><td>椅子上搭着校服</td><td>I think he feels worried, because he keeps looking at the clock.</td></tr>
+<tr><td>桌上有一碗面条</td><td></td></tr>
+<tr><td>男孩一边看钟一边系鞋带</td><td></td></tr>
+<tr><td>窗外天色还很暗</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What time do you get up? How do you go to school?</div>
+<div class="note"><b>无法确认：</b>我们看不出他几点出门，也看不出他最后有没有迟到</div>
+<div class="note"><b>本单元语言点：</b>I ... at ... / It takes me ... / I usually ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出图里的时间和物品：a clock、a uniform、noodles、shoes</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：It is half past ___. / He is ___ing. / I usually ___ at ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 clock / six thirty / uniform / shoes，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;床—椅子—桌子—人—窗外&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：What time do you go to bed? 并说出自己三个时间点</td></tr>
+</table>
+<div class="note"><b>句框：</b>It is half past ___.<br>He is ___ing his shoes.<br>It takes me ___ minutes.<br>Maybe he is ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What time is it in the picture?<br>What is the boy doing?<br>How does he feel? Why do you think so?<br>Is it still dark outside? What does that tell you?<br>What time do you usually get up?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>时间、物品、动作都说对</td><td>把时间或动作说错</td></tr>
+<tr><td>描述顺序</td><td>按空间或时间顺序说</td><td>东一句西一句</td></tr>
+<tr><td>句子完整</td><td>用 It takes me ... / I usually ... 完整句</td><td>只报数字</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>Fifteen Minutes</b><br>Tom gets up at half past six.<br>He eats noodles and drinks some milk.<br>Then he walks to school with Lily.<br>It usually takes them fifteen minutes.<br>Today they walk a little faster and arrive early.<br>They read books together before class.</div>
+<div class="note"><b>中文大意：</b>汤姆六点半起床，吃了面条、喝了牛奶，然后和莉莉一起走路上学，平常要花十五分钟。今天他们走得快了些，早早就到了，上课前还一起读了会儿书。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom 和 Lily，两个同路上学的四年级学生</td></tr>
+<tr><td>想要什么</td><td>想早点到校，多一点读书时间</td></tr>
+<tr><td>遇到问题</td><td>十五分钟的路说长不长，但他们总踩着点到</td></tr>
+<tr><td>如何解决</td><td>今天互相提醒，走得比平时快</td></tr>
+<tr><td>结果与变化</td><td>提前到校，还多出了安静读书的十分钟</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Tom gets up at half past six. → He eats noodles and drinks milk. → They walk to school together. → They arrive early and read books.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>They walk to school together.<br>Tom gets up at half past six.<br>They arrive early and read books.<br>He eats noodles and drinks milk.</div>
+<div class="note"><b>关键词：</b>half past six / noodles / walk / fifteen minutes / early</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：It takes them fifteen minutes to walk to school.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补时间和动作：Tom gets up at ___. Then he ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 half past six / noodles / fifteen minutes / early 说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍（谁—想做什么—问题—结果）</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己上学的路要花多久</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Tom gets up at ___.<br>Then, he eats ___.<br>After that, they walk to ___.<br>Finally, they ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成闹钟的视角讲：I ring at half past six every morning.<br>说感受：他们为什么能提前到校？从故事里找证据<br>新结局：如果今天下雨了，他们的路上会发生什么？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db2">请你扮演一位会聊天的作息管理教练，和我的孩子练习&quot;说时间与作息&quot;。规则：1）先问 What time do you get up / go to school / go to bed?，一句一句来；2）每个回答后追问 How long does it take?；3）孩子答不出给中文提示，再不行给完整句跟读两遍；4）重点练 I ... at half past ... / It takes me ... minutes / I usually ...；5）最后让孩子用 usually、always、never 各说一句自己的习惯；6）全程不催促、不纠错音，先肯定再说下一点。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db2").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u3">
+<h2>单元 3 · 天气与季节</h2>
+<div class="en">Weather and Seasons</div>
+<div class="goal"><b>目标：</b>会描述天气和温度、说出不同季节的活动安排</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit03.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit03.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>What is the weather like in your city?<div class="zh">你们城市的天气怎么样？</div></li>
+<li>It is sunny today, so we can play outside.<div class="zh">今天是晴天，所以我们可以在外面玩。</div></li>
+<li>The weather forecast says it will rain tomorrow.<div class="zh">天气预报说明天会下雨。</div></li>
+<li>It is about twenty degrees this afternoon.<div class="zh">今天下午大约二十度。</div></li>
+<li>Take your umbrella, because it is rainy today.<div class="zh">带上伞，因为今天下雨。</div></li>
+<li>Autumn is my favourite season, because it is cool.<div class="zh">秋天是我最爱的季节，因为很凉爽。</div></li>
+<li>In winter, it often snows in the north.<div class="zh">冬天北方常常下雪。</div></li>
+<li>We wear light clothes when it is hot.<div class="zh">天热的时候我们穿薄一点的衣服。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>weather <i>天气</i></span>
+<span>forecast <i>天气预报</i></span>
+<span>temperature <i>温度</i></span>
+<span>degree <i>度</i></span>
+<span>sunny <i>晴朗的</i></span>
+<span>rainy <i>下雨的</i></span>
+<span>autumn <i>秋天</i></span>
+<span>season <i>季节</i></span>
+<span>umbrella <i>雨伞</i></span>
+<span>clothes <i>衣服</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>What is the weather like today?</li>
+<li>The forecast says it will rain.</li>
+<li>The temperature is about twenty degrees.</li>
+<li>It is twenty degrees this afternoon.</li>
+<li>It is sunny and warm today.</li>
+<li>It is rainy in early summer.</li>
+<li>Autumn is cool and dry here.</li>
+<li>Which season do you like best?</li>
+<li>Take your umbrella with you.</li>
+<li>We wear light clothes in summer.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Tom</div>What is the weather like today?<div class="zh">今天天气怎么样？</div></div>
+<div class="line me"><div class="role">Lily</div>It is sunny and a little windy.<div class="zh">晴，还有点风。</div></div>
+<div class="line"><div class="role">Tom</div>Is it hot? I want to play outside.<div class="zh">热吗？我想出去玩。</div></div>
+<div class="line me"><div class="role">Lily</div>It is about twenty degrees. That is quite cool.<div class="zh">大约二十度，挺凉快的。</div></div>
+<div class="line"><div class="role">Tom</div>Good. Do you have an umbrella?<div class="zh">好。你带伞了吗？</div></div>
+<div class="line me"><div class="role">Lily</div>Yes. The forecast says rain tomorrow.<div class="zh">带了。预报说明天有雨。</div></div>
+<div class="line"><div class="role">Tom</div>Which season do you like best?<div class="zh">你最喜欢哪个季节？</div></div>
+<div class="line me"><div class="role">Lily</div>I like autumn, because the leaves turn red.<div class="zh">我喜欢秋天，因为树叶会变红。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit03.svg" alt="单元3看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一个窗边的场景：窗外下着大雨，玻璃上挂着雨点，窗台上放着一个温度计指着十八度，桌上放着一把雨伞和一杯热牛奶，一个女孩正伸手关窗。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>窗外下着大雨</td><td>Maybe it is cold today, because the girl is closing the window.</td></tr>
+<tr><td>玻璃上挂着雨点</td><td>I think she will take the umbrella when she goes out.</td></tr>
+<tr><td>窗台上放着一个温度计</td><td></td></tr>
+<tr><td>桌上放着一把雨伞和一杯热牛奶</td><td></td></tr>
+<tr><td>一个女孩正在关窗</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What do you wear on a rainy day?</div>
+<div class="note"><b>无法确认：</b>我们看不出温度具体是几度，也看不出女孩要去哪里</div>
+<div class="note"><b>本单元语言点：</b>It is ... / I think ... because ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出天气和物品：rain、a thermometer、an umbrella、hot milk</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：It is ___ outside. / I can see a ___ on the ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 rain / thermometer / umbrella / window，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;窗外—玻璃—窗台—桌上—人&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：What do you do on a rainy day? 并说出自己的安排</td></tr>
+</table>
+<div class="note"><b>句框：</b>It is ___ outside.<br>There is a ___ on the ___.<br>The girl is ___ing the window.<br>I think she ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What is the weather like in the picture?<br>What can you see on the window?<br>What is on the desk?<br>Why is the girl closing the window?<br>What do you usually do on a rainy day?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的天气和物品都对</td><td>凭空加图里没有的东西</td></tr>
+<tr><td>描述顺序</td><td>按从外到内的顺序说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 It is ... / There is ... 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>把猜测说成事实</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Rainy Morning</b><br>Lily looks out of the window after breakfast.<br>It is raining very hard outside.<br>She takes her umbrella and her rain boots.<br>On the way, she sees a small cat under a tree.<br>She holds the umbrella over the wet cat.<br>The cat is safe, and Lily is happy.</div>
+<div class="note"><b>中文大意：</b>早饭后莉莉看向窗外，外面雨下得很大。她带上雨伞和雨靴出门，路上看见一只小猫躲在树下。她把伞撑在小猫头上，小猫安全了，莉莉也很开心。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Lily，一个下雨天出门的四年级女孩</td></tr>
+<tr><td>想要什么</td><td>想按时到校又不淋湿</td></tr>
+<tr><td>遇到问题</td><td>雨太大，路上还有一只被淋湿的小猫</td></tr>
+<tr><td>如何解决</td><td>她把自己的伞让给了小猫</td></tr>
+<tr><td>结果与变化</td><td>小猫平安，莉莉虽然淋湿了一点，但心里很高兴</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Lily looks out of the window. → It is raining very hard. → She sees a small cat under a tree. → She holds the umbrella over the cat. → The cat is safe.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>She sees a small cat under a tree.<br>Lily looks out of the window.<br>The cat is safe.<br>She holds the umbrella over the cat.</div>
+<div class="note"><b>关键词：</b>rain / umbrella / boots / cat / safe</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：She holds the umbrella over the wet cat.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补全：It is ___. She takes her ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 rain / umbrella / cat / safe 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己下雨天做过的一件小事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Lily looks ___.<br>Then, it is ___.<br>After that, she sees ___.<br>Finally, she ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那只小猫的视角讲：I am wet and cold under the tree.<br>说感受：莉莉为什么自己淋湿了还开心？从故事里找证据<br>新结局：如果莉莉没带伞，她还能怎么帮小猫？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db3">请你扮演一位电视台的天气预报员，和我的孩子练习&quot;说天气与季节&quot;。规则：1）开场给一句天气播报，让孩子跟着复述；2）再问 Which season do you like best? Why? 要求说出两个理由；3）孩子说不出理由时给中文提示，比如&quot;是因为天气，还是因为能做的事？&quot;；4）重点练 It is ... / It is about ... degrees / I like ... because ...；5）最后让孩子说出自己在不同季节会穿什么；6）全程中文辅助，鼓励开口，不纠错音。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db3").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u4">
+<h2>单元 4 · 职业与理想</h2>
+<div class="en">Jobs and Dreams</div>
+<div class="goal"><b>目标：</b>会说出想做的职业和理由、说出为梦想打算做的事</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit04.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit04.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>What do you want to be in the future?<div class="zh">你将来想做什么？</div></li>
+<li>I want to be a scientist, because I love experiments.<div class="zh">我想当科学家，因为我喜欢做实验。</div></li>
+<li>A vet takes care of sick animals every day.<div class="zh">兽医每天照顾生病的动物。</div></li>
+<li>Firefighters keep our city safe all year round.<div class="zh">消防员一年到头守护着城市的安全。</div></li>
+<li>My dream is to fly a big plane one day.<div class="zh">我的梦想是有一天能开大飞机。</div></li>
+<li>To be a pilot, I must study hard and stay healthy.<div class="zh">想当飞行员，我必须努力学习、保持健康。</div></li>
+<li>My best friend wants to be an artist.<div class="zh">我最好的朋友想成为一名画家。</div></li>
+<li>Every job needs practice, patience and a kind heart.<div class="zh">每一份工作都需要练习、耐心和一颗善心。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>dream <i>梦想</i></span>
+<span>doctor <i>医生</i></span>
+<span>vet <i>兽医</i></span>
+<span>pilot <i>飞行员</i></span>
+<span>firefighter <i>消防员</i></span>
+<span>scientist <i>科学家</i></span>
+<span>artist <i>画家</i></span>
+<span>practise <i>练习</i></span>
+<span>patient <i>有耐心的</i></span>
+<span>future <i>将来</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>My dream is to fly a plane.</li>
+<li>A doctor takes care of sick people.</li>
+<li>A vet looks after sick animals.</li>
+<li>A pilot flies planes to many cities.</li>
+<li>Firefighters keep our city safe.</li>
+<li>A scientist does experiments every day.</li>
+<li>An artist draws pictures for books.</li>
+<li>I practise drawing every weekend.</li>
+<li>Good doctors are kind and patient.</li>
+<li>What do you want to be in the future?</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Li</div>Today we are going to talk about our dreams.<div class="zh">今天我们来聊聊自己的梦想。</div></div>
+<div class="line me"><div class="role">Tom</div>I want to be a pilot when I grow up.<div class="zh">我长大后想当一名飞行员。</div></div>
+<div class="line"><div class="role">Miss Li</div>Why do you want to be a pilot?<div class="zh">你为什么想当飞行员？</div></div>
+<div class="line me"><div class="role">Tom</div>Because I want to fly a big plane over the sea.<div class="zh">因为我想开大飞机飞过大海。</div></div>
+<div class="line"><div class="role">Lily</div>I want to be a vet, because I love animals.<div class="zh">我想当兽医，因为我喜欢动物。</div></div>
+<div class="line me"><div class="role">Miss Li</div>That is a kind dream. What will you do now?<div class="zh">这是个善良的梦想。你现在会做些什么？</div></div>
+<div class="line"><div class="role">Lily</div>I will read one book about animals every month.<div class="zh">我每个月读一本关于动物的书。</div></div>
+<div class="line me"><div class="role">Miss Li</div>Great. Dreams need practice and patience.<div class="zh">很棒。梦想需要练习和耐心。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit04.svg" alt="单元4看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一间教室的&quot;职业日&quot;：一个孩子戴着飞行员的帽子站在讲台前讲话，墙上贴着消防员、医生、画家和兽医四张图片，台下好几个孩子举着手，讲台上放着一本打开的书。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>一个孩子戴着飞行员帽子站在讲台前</td><td>Maybe today is a career day, because there are job pictures on the wall.</td></tr>
+<tr><td>墙上贴着四张职业图片</td><td>I think the children are curious, because so many hands are up.</td></tr>
+<tr><td>台下有好几个孩子举着手</td><td></td></tr>
+<tr><td>讲台上放着一本打开的书</td><td></td></tr>
+<tr><td>黑板上写着一行英文</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What do you want to be? What will you do for it?</div>
+<div class="note"><b>无法确认：</b>我们听不清台上那个孩子在说什么，也看不出他们的名字</div>
+<div class="note"><b>本单元语言点：</b>I want to be ... because ... / I will ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出四种职业：a pilot、a doctor、an artist、a vet</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：I can see a ___. / He wants to be a ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 pilot / pictures / hands / career，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;台上—墙上—台下&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：What do you want to be? Why? 并说一件现在能做的事</td></tr>
+</table>
+<div class="note"><b>句框：</b>There is a ___ on the wall.<br>The boy wants to be a ___.<br>Many children are ___ing their hands.<br>I think they are ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in the classroom?<br>What is the boy wearing?<br>What jobs are on the wall?<br>Why are the children putting up their hands?<br>What do you want to be? Why?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的职业和动作都对</td><td>把没看到的职业也说成&quot;有&quot;</td></tr>
+<tr><td>描述顺序</td><td>按台上到台下的顺序说</td><td>东一句西一句</td></tr>
+<tr><td>句子完整</td><td>用 I want to be ... 完整句</td><td>只说职业名称</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Boy Who Wants to Fly</b><br>Tom wants to be a pilot one day.<br>He makes a paper plane in the classroom.<br>It flies far and hits the window.<br>His classmates laugh, and Tom feels sad.<br>Miss Li says, &quot;Pilots never give up after one try.&quot;<br>Tom makes a better plane and smiles again.</div>
+<div class="note"><b>中文大意：</b>汤姆想有一天当上飞行员。他在教室里折了架纸飞机，飞机飞出去撞到窗户。同学们笑了起来，汤姆有点难过。李老师对他说&quot;飞行员试一次就放弃可不行的&quot;，汤姆重新折了一架更好的，又笑了。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom，一个梦想当飞行员的四年级男孩</td></tr>
+<tr><td>想要什么</td><td>想做出一架飞得又远又稳的纸飞机</td></tr>
+<tr><td>遇到问题</td><td>第一次试飞就撞窗，同学还笑话了他</td></tr>
+<tr><td>如何解决</td><td>老师提醒他飞行员不能一次就放弃，他重新折了一架</td></tr>
+<tr><td>结果与变化</td><td>新飞机飞得更远，汤姆也更确定自己的梦想</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Tom makes a paper plane. → It flies far and hits the window. → His classmates laugh at him. → Miss Li tells him to try again. → He makes a better plane.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>His classmates laugh at him.<br>Tom makes a paper plane.<br>He makes a better plane.<br>Miss Li tells him to try again.</div>
+<div class="note"><b>关键词：</b>pilot / paper plane / window / laugh / try again</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：Tom makes a better plane and smiles again.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补全：Tom wants to be a ___. He makes a ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 pilot / plane / laugh / try again 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己为梦想做过的一件小事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Tom wants to be ___.<br>Then, he makes ___.<br>After that, Miss Li says, &quot;___.&quot;<br>Finally, Tom ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那架纸飞机的视角讲：I fly far and hit the window.<br>说感受：汤姆为什么又笑了？从故事里找证据<br>新结局：如果同学们那时候给他鼓掌，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db4">请你扮演一位带孩子参观&quot;职业体验馆&quot;的讲解员，和我的孩子练习&quot;说职业与理想&quot;。规则：1）每次介绍一种职业，说一句 A ... does ...；2）问 Do you want to be a ...? 让孩子用 Yes, because ... 或 No, because ... 回答；3）孩子说不出理由给中文提示和句框 I want to be ... because ...；4）重点练 want to be / because / I will ...；5）最后让孩子说出为实现梦想现在能做的一件事；6）全程中文辅助，不纠错音，鼓励他把理由说完整。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db4").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u5">
+<h2>单元 5 · 食物与健康</h2>
+<div class="en">Food and Health</div>
+<div class="goal"><b>目标：</b>会谈论学校餐食、说出健康饮食的简单建议</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit05.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit05.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>A healthy breakfast gives me energy for the whole morning.<div class="zh">一顿健康的早餐给我一上午的能量。</div></li>
+<li>I eat vegetables at lunch and dinner every day.<div class="zh">我午饭和晚饭都吃蔬菜。</div></li>
+<li>Too much sugar is really bad for your teeth.<div class="zh">太多糖真的对牙齿不好。</div></li>
+<li>I drink water when I feel thirsty after running.<div class="zh">跑步后口渴时我就喝水。</div></li>
+<li>Our school menu has rice, vegetables, eggs and soup.<div class="zh">我们学校的菜单有米饭、蔬菜、鸡蛋和汤。</div></li>
+<li>Do you eat any fruit between your meals?<div class="zh">你两餐之间会吃点水果吗？</div></li>
+<li>Exercise and good food keep us strong and happy.<div class="zh">运动加上好的食物让我们既强壮又开心。</div></li>
+<li>I try to eat less fried food this term.<div class="zh">这学期我尽量少吃油炸食品。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>healthy <i>健康的</i></span>
+<span>vegetable <i>蔬菜</i></span>
+<span>fruit <i>水果</i></span>
+<span>sugar <i>糖</i></span>
+<span>breakfast <i>早餐</i></span>
+<span>menu <i>菜单</i></span>
+<span>thirsty <i>渴的</i></span>
+<span>strong <i>强壮的</i></span>
+<span>fried <i>油炸的</i></span>
+<span>soup <i>汤</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>Healthy food gives us energy.</li>
+<li>I eat vegetables at lunch and dinner.</li>
+<li>Fruit is a good snack for children.</li>
+<li>Too much sugar is bad for teeth.</li>
+<li>A good breakfast helps me listen in class.</li>
+<li>What is on the menu today?</li>
+<li>I drink water when I feel thirsty.</li>
+<li>Exercise and vegetables keep us strong.</li>
+<li>I do not eat much fried food now.</li>
+<li>We have rice, vegetables and soup.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Tom</div>What is on the menu today?<div class="zh">今天菜单上有什么？</div></div>
+<div class="line me"><div class="role">Lily</div>We have rice, vegetables, eggs and soup.<div class="zh">有米饭、蔬菜、鸡蛋和汤。</div></div>
+<div class="line"><div class="role">Tom</div>Do you eat vegetables every single day?<div class="zh">你每天都吃蔬菜吗？</div></div>
+<div class="line me"><div class="role">Lily</div>Yes. Vegetables keep us strong and healthy.<div class="zh">吃呀。蔬菜让我们强壮又健康。</div></div>
+<div class="line"><div class="role">Tom</div>I do not like carrots very much, to be honest.<div class="zh">说实话，我不太喜欢胡萝卜。</div></div>
+<div class="line me"><div class="role">Lily</div>Then you can try tomatoes or green beans.<div class="zh">那你可以试试番茄或者青豆。</div></div>
+<div class="line"><div class="role">Tom</div>All right. I will drink more water too.<div class="zh">好吧。我也会多喝水。</div></div>
+<div class="line me"><div class="role">Lily</div>Good idea. Too much sugar is bad for us.<div class="zh">好主意。吃太多糖对身体不好。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit05.svg" alt="单元5看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>学校食堂：一个餐盘里盛着米饭、青菜、鸡蛋和一小碗汤，旁边摆着一盘切好的水果，墙上贴着一张&quot;健康饮食金字塔&quot;图，一个男孩正端着餐盘走向座位。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>餐盘里有米饭、青菜和鸡蛋</td><td>Maybe the school cares about healthy food, because the food pyramid is on the wall.</td></tr>
+<tr><td>餐盘里还有一小碗汤</td><td>I think the boy is hungry, because his plate is quite full.</td></tr>
+<tr><td>旁边摆着一盘切好的水果</td><td></td></tr>
+<tr><td>墙上贴着一张饮食金字塔图</td><td></td></tr>
+<tr><td>一个男孩端着餐盘走向座位</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What do you usually eat for lunch at school?</div>
+<div class="note"><b>无法确认：</b>我们看不出菜的味道如何，也看不出他会不会全部吃完</div>
+<div class="note"><b>本单元语言点：</b>There is / There are ... / ... is good for ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出餐盘里的食物：rice、green vegetables、eggs、soup、fruit</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There is some ___ on the plate. / I can see a ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 rice / vegetables / soup / fruit / menu，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;餐盘—旁边—墙上—人&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：Is this a healthy lunch? Why? 并说出自己的理由</td></tr>
+</table>
+<div class="note"><b>句框：</b>There is some ___ on the plate.<br>There is a ___ on the wall.<br>The boy is ___ing his plate.<br>I think ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What is on the plate?<br>What is next to the plate?<br>What is on the wall?<br>Is this a healthy meal? Why do you think so?<br>What do you eat for lunch at school?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的食物和数量都对</td><td>凭空加图里没有的食物</td></tr>
+<tr><td>描述顺序</td><td>按从餐盘到墙面的顺序说</td><td>想到哪说到哪</td></tr>
+<tr><td>句子完整</td><td>用 There is / There are 完整句</td><td>只说食物单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>只说&quot;很健康&quot;却不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>Two Lunches</b><br>Tom buys chips and cola for lunch on Monday.<br>He feels tired during the afternoon class.<br>On Tuesday, he takes rice, vegetables and soup.<br>He runs much faster in his PE class.<br>After that, Tom eats more vegetables every day.<br>His teacher says he looks stronger now.</div>
+<div class="note"><b>中文大意：</b>星期一汤姆午饭买了薯片和可乐，下午上课一直犯困。星期二他打了米饭、蔬菜和汤，体育课上跑得快多了。从那以后汤姆每天都多吃蔬菜，老师说他看起来结实了不少。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom，一个午饭爱挑食的四年级男孩</td></tr>
+<tr><td>想要什么</td><td>想知道午饭到底会不会影响自己</td></tr>
+<tr><td>遇到问题</td><td>他一直觉得吃什么都无所谓</td></tr>
+<tr><td>如何解决</td><td>用两天做了个对比，亲眼看到差别</td></tr>
+<tr><td>结果与变化</td><td>他开始主动选蔬菜，也更相信&quot;吃对了才有劲&quot;</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Tom buys chips and cola on Monday. → He feels tired in the afternoon. → He eats rice and vegetables on Tuesday. → He runs faster in PE class. → He eats more vegetables after that.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>He eats rice and vegetables on Tuesday.<br>Tom buys chips and cola on Monday.<br>He runs faster in PE class.<br>He feels tired in the afternoon.</div>
+<div class="note"><b>关键词：</b>chips / cola / tired / vegetables / faster / stronger</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：He runs much faster in his PE class.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补全：Tom eats ___. He feels ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 chips / tired / vegetables / faster 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己这几天吃过的健康食物</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Tom buys ___.<br>Then, he feels ___.<br>After that, he eats ___.<br>Finally, he ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那份蔬菜的视角讲：I sit on Tom&#x27;s plate on Tuesday.<br>说感受：汤姆为什么改变了？从故事里找证据<br>新结局：如果第一天和第二天他吃的东西一样，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db5">请你扮演学校食堂的营养师，和我的孩子练习&quot;说食物与健康&quot;。规则：1）先问 What do you have for lunch today?；2）孩子答完你追问 Is it healthy? Why?，引导他说出理由；3）孩子说不出理由时给中文提示，比如&quot;因为有蔬菜，还是因为有汤？&quot;；4）重点练 There is / There are ... 和 ... is good / bad for ...；5）最后让孩子给自己设计一份健康午餐，说出三样东西；6）全程中文辅助，不纠错音，鼓励他把理由说完整。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db5").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u6">
+<h2>单元 6 · 运动与爱好</h2>
+<div class="en">Sports and Hobbies</div>
+<div class="goal"><b>目标：</b>会说自己的爱好和练习频率、会邀请别人一起参加</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit06.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit06.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>My hobby is collecting stamps from different cities.<div class="zh">我的爱好是收集不同城市的邮票。</div></li>
+<li>I practise the guitar for thirty minutes every evening.<div class="zh">我每天晚上练三十分钟吉他。</div></li>
+<li>Our school football team has a match on Saturday.<div class="zh">我们校足球队星期六有一场比赛。</div></li>
+<li>Do you want to join the art club with me?<div class="zh">你想和我一起加入美术社吗？</div></li>
+<li>I skate in the park when the weather is cool.<div class="zh">天气凉快的时候我在公园滑冰。</div></li>
+<li>Playing volleyball is fun and keeps me strong.<div class="zh">打排球很有趣，也让我更强壮。</div></li>
+<li>I never miss a swimming lesson in the summer.<div class="zh">夏天我从不错过任何一节游泳课。</div></li>
+<li>How often do you practise your hobby every week?<div class="zh">你的爱好一周练习多少次？</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>hobby <i>爱好</i></span>
+<span>practise <i>练习</i></span>
+<span>team <i>队</i></span>
+<span>match <i>比赛</i></span>
+<span>volleyball <i>排球</i></span>
+<span>skate <i>滑冰</i></span>
+<span>collect <i>收集</i></span>
+<span>stamp <i>邮票</i></span>
+<span>guitar <i>吉他</i></span>
+<span>join <i>加入</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>My hobby is collecting stamps.</li>
+<li>I practise the guitar every evening.</li>
+<li>Our school team has a match on Saturday.</li>
+<li>The match starts at three in the afternoon.</li>
+<li>We play volleyball in the school club.</li>
+<li>I skate in the park when it is cool.</li>
+<li>I collect stamps from different cities.</li>
+<li>She keeps her stamps in a big book.</li>
+<li>He plays the guitar in the school band.</li>
+<li>Do you want to join the art club?</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Lily</div>Tom, what is your hobby these days?<div class="zh">汤姆，你最近有什么爱好？</div></div>
+<div class="line me"><div class="role">Tom</div>I collect stamps. I have about forty now.<div class="zh">我集邮。现在有四十张左右。</div></div>
+<div class="line"><div class="role">Lily</div>Forty! Where do you get them from?<div class="zh">四十张！你从哪儿弄来的？</div></div>
+<div class="line me"><div class="role">Tom</div>Some are from my friends, and some from the post office.<div class="zh">有些是朋友给的，有些是从邮局买的。</div></div>
+<div class="line"><div class="role">Lily</div>Do you still play football after school?<div class="zh">你放学后还踢足球吗？</div></div>
+<div class="line me"><div class="role">Tom</div>Yes. Our team has a match this Saturday.<div class="zh">踢呀。我们队这星期六有比赛。</div></div>
+<div class="line"><div class="role">Lily</div>Can I come and watch the match?<div class="zh">我能来看比赛吗？</div></div>
+<div class="line me"><div class="role">Tom</div>Sure. Come at three in the afternoon.<div class="zh">当然。下午三点来吧。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit06.svg" alt="单元6看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>学校社团活动室：一个男孩抱着吉他在调音，一个女孩把邮票贴进集邮册，桌上放着一个排球和一块滑板，墙上挂着一张足球比赛的照片，地上散落着几支彩笔。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>一个男孩抱着一把吉他</td><td>Maybe this is a hobby club room, because everyone is doing something different.</td></tr>
+<tr><td>一个女孩在往集邮册里贴邮票</td><td>I think the girl likes travelling, because she collects stamps from many cities.</td></tr>
+<tr><td>桌上放着一个排球和一块滑板</td><td></td></tr>
+<tr><td>墙上挂着一张足球比赛的照片</td><td></td></tr>
+<tr><td>地上有几支彩笔</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What is your hobby? How often do you practise it?</div>
+<div class="note"><b>无法确认：</b>我们听不到吉他弹得怎么样，也看不出那张照片是什么时候拍的</div>
+<div class="note"><b>本单元语言点：</b>I practise ... / How often do you ...?</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出四种活动和物品：a guitar、stamps、a volleyball、a skateboard</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：The boy is ___ing. / There is a ___ on the table.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 guitar / stamps / volleyball / photo，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;人—桌上—墙上—地上&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：What is your hobby? How often do you practise?</td></tr>
+</table>
+<div class="note"><b>句框：</b>The girl is ___ing stamps.<br>There is a ___ on the table.<br>There is a photo of ___ on the wall.<br>I think ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What are the children doing?<br>What is on the table?<br>What is on the wall?<br>Why do you think this is a club room?<br>What is your hobby? How often do you practise it?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的活动和物品都对</td><td>把没做的活动说成&quot;在做&quot;</td></tr>
+<tr><td>描述顺序</td><td>按空间顺序说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 ... is ...ing 完整句</td><td>只说物品名称</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>Saturday&#x27;s Match</b><br>Tom&#x27;s team has an important match on Saturday.<br>It rains hard before the game begins.<br>Tom wants to stay at home and watch TV.<br>His friend calls and says, &quot;We really need you!&quot;<br>Tom runs to the field in the rain.<br>Their team wins, and Tom feels proud.</div>
+<div class="note"><b>中文大意：</b>汤姆的球队星期六有一场重要比赛。开赛前下起了大雨，汤姆想待在家里看电视。朋友打电话来说&quot;我们真的需要你&quot;，汤姆冒雨跑到了球场。他们队赢了，汤姆很自豪。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom 和他的队友们</td></tr>
+<tr><td>想要什么</td><td>想赢下星期六那场重要比赛</td></tr>
+<tr><td>遇到问题</td><td>大雨打湿了球场，汤姆打了退堂鼓</td></tr>
+<tr><td>如何解决</td><td>队友一个电话把他叫回了球场</td></tr>
+<tr><td>结果与变化</td><td>球队赢了，汤姆也明白了&quot;团队需要我&quot;这句话的分量</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Tom&#x27;s team has a match on Saturday. → It rains hard before the game. → Tom wants to stay at home. → His friend calls and asks him to come. → Their team wins the match.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>His friend calls and asks him to come.<br>Tom&#x27;s team has a match on Saturday.<br>Their team wins the match.<br>Tom wants to stay at home.</div>
+<div class="note"><b>关键词：</b>match / Saturday / rain / friend / win / proud</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：Tom runs to the field in the rain.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补全：It rains ___. Tom wants to ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 match / rain / friend / win 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己坚持做过的一件事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Tom&#x27;s team has ___.<br>Then, it rains ___.<br>After that, his friend says, &quot;___!&quot;<br>Finally, their team ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那个队友的视角讲：I call Tom because we need him.<br>说感受：汤姆为什么最后觉得自豪？从故事里找证据<br>新结局：如果雨大到比赛取消了，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db6">请你扮演一位学校社团的学长，和我的孩子练习&quot;说爱好与运动&quot;。规则：1）先问 What is your hobby?；2）再追问 How often do you practise?，引导他说出次数；3）孩子答不出给中文提示和句框 I practise ... twice a week；4）重点练 My hobby is ... / I practise ... / How often ...?；5）最后让孩子邀请你一起参加，用上 Do you want to ...?；6）全程中文辅助，不纠错音，鼓励他把频率说清楚。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db6").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u7">
+<h2>单元 7 · 方位与问路</h2>
+<div class="en">Directions</div>
+<div class="goal"><b>目标：</b>会在街区里问路和指路、说出交通方式</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit07.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit07.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>Excuse me, how can I get to the museum?<div class="zh">打扰一下，请问博物馆怎么走？</div></li>
+<li>Go straight along this road for two blocks.<div class="zh">沿着这条路直走两个街区。</div></li>
+<li>Turn left at the traffic lights, and you will see it.<div class="zh">在红绿灯处左转，你就能看到它。</div></li>
+<li>The museum is opposite the big bookshop on this road.<div class="zh">博物馆在这条路上那家大书店的对面。</div></li>
+<li>Walk past the bank, and the entrance is on your left.<div class="zh">走过银行，入口就在你左手边。</div></li>
+<li>Is it far from here? It is about ten minutes on foot.<div class="zh">离这儿远吗？走路大约十分钟。</div></li>
+<li>You can also take the number five bus from here.<div class="zh">你也可以从这里坐五路公交车。</div></li>
+<li>Thank you so much. Have a nice day.<div class="zh">太谢谢您了。祝您今天愉快。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>corner <i>拐角</i></span>
+<span>cross <i>穿过</i></span>
+<span>traffic lights <i>红绿灯</i></span>
+<span>opposite <i>在…对面</i></span>
+<span>straight <i>直地</i></span>
+<span>block <i>街区</i></span>
+<span>museum <i>博物馆</i></span>
+<span>entrance <i>入口</i></span>
+<span>far <i>远的</i></span>
+<span>bus stop <i>公交站</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>Turn left at the next corner.</li>
+<li>Cross the road at the traffic lights.</li>
+<li>Wait for the green light, please.</li>
+<li>The museum is opposite the big bookshop.</li>
+<li>Go straight along this road.</li>
+<li>Walk for two blocks and you will see it.</li>
+<li>How can I get to the museum?</li>
+<li>The entrance is on your left.</li>
+<li>Is it far from here?</li>
+<li>There is a bus stop near the bank.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Lily</div>Excuse me, how can I get to the city museum?<div class="zh">打扰一下，请问去市博物馆怎么走？</div></div>
+<div class="line me"><div class="role">Woman</div>Go straight and turn left at the traffic lights.<div class="zh">一直走，在红绿灯那里左转。</div></div>
+<div class="line"><div class="role">Lily</div>Is it far from here?<div class="zh">离这儿远吗？</div></div>
+<div class="line me"><div class="role">Woman</div>No. It is about ten minutes on foot.<div class="zh">不远。走路大概十分钟。</div></div>
+<div class="line"><div class="role">Lily</div>Is it opposite the big bookshop on that road?<div class="zh">它是在那条路上那家大书店的对面吗？</div></div>
+<div class="line me"><div class="role">Woman</div>Yes. You cannot miss the red building there.<div class="zh">对。你会看到那栋红色的楼，很好找。</div></div>
+<div class="line"><div class="role">Lily</div>Can I take a bus there instead?<div class="zh">我可以改坐公交车去吗？</div></div>
+<div class="line me"><div class="role">Woman</div>Sure. Take the number five bus and get off at the bank.<div class="zh">可以。坐五路车，在银行那一站下车。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit07.svg" alt="单元7看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一幅街区地图：中间是十字路口和红绿灯，一角画着一座博物馆，博物馆对面是一家大书店，旁边有银行和公交站，一个女孩拿着地图站在路口。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>中间是一个十字路口</td><td>Maybe the girl is lost, because she keeps looking at her map.</td></tr>
+<tr><td>路口画着红绿灯</td><td>I think she will cross the road, because she is standing at the corner.</td></tr>
+<tr><td>一角有一座博物馆</td><td></td></tr>
+<tr><td>博物馆对面有一家大书店</td><td></td></tr>
+<tr><td>旁边有一个公交站和一家银行</td><td></td></tr>
+<tr><td>一个女孩拿着地图站在路口</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>How do you ask the way when you are lost?</div>
+<div class="note"><b>无法确认：</b>我们看不出女孩要去哪儿，也看不出这些街道的名字</div>
+<div class="note"><b>本单元语言点：</b>How can I get to ...? / It is opposite ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出地图上的地方：a museum、a bookshop、a bank、a bus stop</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：Go straight and turn ___./ The ___ is opposite the ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 map / museum / bookshop / lights，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;路口—一角—对面—旁边—人&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：How do you get to your school from your home? 并说路线</td></tr>
+</table>
+<div class="note"><b>句框：</b>Go straight and turn ___ at the ___.<br>The ___ is opposite the ___.<br>You can take the number ___ bus.<br>Maybe she is ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What places can you see on the map?<br>Where is the museum?<br>What is opposite the bookshop?<br>How can the girl get to the museum?<br>Is the girl lost? Why do you think so?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的位置和路线都对</td><td>把左右或对面说反</td></tr>
+<tr><td>描述顺序</td><td>按地图顺序一步步说</td><td>东一句西一句</td></tr>
+<tr><td>句子完整</td><td>用 Go straight / Turn left 完整句</td><td>只说地名</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>直接下结论</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Map in Her Hand</b><br>Lily wants to visit the city museum alone.<br>She gets off the bus one stop too early.<br>She looks at her map and feels a little worried.<br>A woman walks by and asks if she needs help.<br>Lily walks two blocks and sees the red building.<br>She thanks the woman and smiles at last.</div>
+<div class="note"><b>中文大意：</b>莉莉想独自去市博物馆，却提前一站下了车。她看着地图有点发愁，一位阿姨路过问她要不要帮忙。莉莉走了两个街区，看到了那栋红楼，最后向阿姨道了谢，开心地笑了。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Lily，一个第一次独自出门的四年级女孩</td></tr>
+<tr><td>想要什么</td><td>想自己找到市博物馆</td></tr>
+<tr><td>遇到问题</td><td>她提前一站下车，看着地图发愁</td></tr>
+<tr><td>如何解决</td><td>她接受了路人的帮助，按指示走了两个街区</td></tr>
+<tr><td>结果与变化</td><td>她找到了博物馆，也敢于向陌生人开口求助了</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Lily wants to visit the museum alone. → She gets off the bus too early. → She looks at her map and feels worried. → A woman offers to help her. → She walks two blocks and finds the museum.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>A woman offers to help her.<br>Lily wants to visit the museum alone.<br>She walks two blocks and finds the museum.<br>She gets off the bus too early.</div>
+<div class="note"><b>关键词：</b>museum / bus / map / worried / blocks / smile</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：She walks two blocks and sees the red building.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补路线：Go straight for ___ blocks. Turn ___ at the lights.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 museum / map / worried / blocks 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说说自己第一次独自出门的经历</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Lily wants to ___.<br>Then, she gets off ___.<br>After that, a woman says, &quot;___?&quot;<br>Finally, she finds ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那位阿姨的视角讲：I see a girl with a map.<br>说感受：莉莉为什么最后笑了？从故事里找证据<br>新结局：如果莉莉一直不肯开口问人，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db7">请你扮演一位在路口执勤的志愿者，和我的孩子练习&quot;问路与指路&quot;。规则：1）让孩子先说 Excuse me, how can I get to the ...?；2）你给出两到三步路线，中间故意说快一点，让孩子可以请你说慢些；3）孩子说 Thank you，你回 You are welcome；4）孩子卡住时给中文提示和句框 Go straight / Turn left / It is opposite ...；5）最后换成孩子给你指路，说出完整的三个步骤；6）全程中文辅助，不纠错音，鼓励他把顺序说清楚。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db7").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u8">
+<h2>单元 8 · 节日与庆祝</h2>
+<div class="en">Festivals and Celebrations</div>
+<div class="goal"><b>目标：</b>会描述节日里的活动和食物、会邀请别人一起参加</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit08.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit08.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>We celebrate the Spring Festival with our whole family.<div class="zh">我们和全家一起庆祝春节。</div></li>
+<li>My grandma makes dumplings for us on that special evening.<div class="zh">我奶奶在那天晚上给我们包饺子。</div></li>
+<li>We hang red lanterns in front of our house together.<div class="zh">我们一起在屋子前面挂红灯笼。</div></li>
+<li>On Mid-Autumn Day, we share moon cakes in the garden.<div class="zh">中秋节我们在院子里分吃月饼。</div></li>
+<li>I will invite my friends to watch our school show.<div class="zh">我会邀请朋友来看我们学校的演出。</div></li>
+<li>We give small gifts to our relatives and close friends.<div class="zh">我们给亲戚和好朋友送小礼物。</div></li>
+<li>My favourite tradition is watching the dragon dance in the street.<div class="zh">我最喜欢的传统是在街上看舞龙。</div></li>
+<li>Everyone feels happy and excited during the long holiday.<div class="zh">长假里每个人都开心又兴奋。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>celebrate <i>庆祝</i></span>
+<span>lantern <i>灯笼</i></span>
+<span>dumpling <i>饺子</i></span>
+<span>moon cake <i>月饼</i></span>
+<span>decorate <i>装饰</i></span>
+<span>tradition <i>传统</i></span>
+<span>gift <i>礼物</i></span>
+<span>invite <i>邀请</i></span>
+<span>performance <i>表演</i></span>
+<span>holiday <i>假期</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>We celebrate the festival with our family.</li>
+<li>We hang red lanterns outside our door.</li>
+<li>My grandma makes dumplings for us.</li>
+<li>We share moon cakes in the garden.</li>
+<li>We decorate the classroom with red paper.</li>
+<li>My favourite tradition is the dragon dance.</li>
+<li>We give small gifts to our friends.</li>
+<li>I want to invite you to our show.</li>
+<li>Our class has a short performance on Friday.</li>
+<li>Everyone feels happy during the long holiday.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Li</div>Our school show is on Friday afternoon this week.<div class="zh">我们学校的演出在本周五下午。</div></div>
+<div class="line me"><div class="role">Lily</div>I will sing a short song with my classmates.<div class="zh">我要和同学一起唱一首短歌。</div></div>
+<div class="line"><div class="role">Tom</div>Can we decorate our classroom on Thursday morning?<div class="zh">我们星期四上午能布置教室吗？</div></div>
+<div class="line me"><div class="role">Miss Li</div>Of course. We need red paper, scissors and some balloons.<div class="zh">当然可以。我们需要红纸、剪刀和一些气球。</div></div>
+<div class="line"><div class="role">Lily</div>My grandma will make dumplings for the whole class.<div class="zh">我奶奶会给全班包饺子。</div></div>
+<div class="line me"><div class="role">Tom</div>I love dumplings. What about you, Miss Li?<div class="zh">我喜欢饺子。李老师您呢？</div></div>
+<div class="line"><div class="role">Miss Li</div>I like the dragon dance best of all.<div class="zh">我最喜欢的是舞龙。</div></div>
+<div class="line me"><div class="role">Tom</div>Then let us draw a big dragon for our wall.<div class="zh">那我们在墙上画一条大龙吧。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit08.svg" alt="单元8看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一间装饰一新的教室：天花板上挂着红灯笼和彩带，黑板上画着一条长龙，墙上贴着红色窗花，几个孩子正在排练节目，桌上摆着月饼和水果。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>天花板上挂着红灯笼和彩带</td><td>Maybe a festival is coming, because there are red lanterns everywhere.</td></tr>
+<tr><td>黑板上画着一条长龙</td><td>I think the children are excited, because they are practising together and smiling.</td></tr>
+<tr><td>墙上贴着红色窗花</td><td></td></tr>
+<tr><td>几个孩子正在排练节目</td><td></td></tr>
+<tr><td>桌上摆着月饼和水果</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>How does your family celebrate your favourite festival?</div>
+<div class="note"><b>无法确认：</b>我们看不出今天的具体日期，也看不出他们要表演什么节目</div>
+<div class="note"><b>本单元语言点：</b>We ... together. / I will ... / There are ...</div>
+<div class="note"><b>观察路线：</b></div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出装饰和食物：lanterns、ribbons、paper-cuts、moon cakes、fruit</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There are ___ on the ___. / They are ___ing.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 lanterns / dragon / paper-cuts / moon cakes，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;天花板—黑板—墙上—人—桌上&quot;顺序说 6-10 句，加一个 Maybe</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答：How do you celebrate your favourite festival? 并说出两件事</td></tr>
+</table>
+<div class="note"><b>句框：</b>There are ___ on the ___.<br>Someone is ___ing on the blackboard.<br>They are ___ing for the show.<br>I think ___ because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in the classroom?<br>What is on the blackboard?<br>What are the children doing?<br>Why are there so many red things in the room?<br>How does your family celebrate your favourite festival?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的装饰、食物和动作都对</td><td>凭空加图里没有的东西</td></tr>
+<tr><td>描述顺序</td><td>按空间顺序推进</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 There are / They are ...ing 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think ... because</td><td>把猜测说成事实</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Red Paper Dragon</b><br>The class wants a big dragon for the school show.<br>They have red paper, but they do not have much time.<br>Tom cuts the paper, Lily draws the eyes, and Sam glues the tail.<br>The dragon looks far too small at first.<br>They work together and add a very long tail.<br>Everyone claps when the dragon goes up on the wall.</div>
+<div class="note"><b>中文大意：</b>班里想为学校演出做一条大龙。他们有红纸，但时间不多。汤姆剪纸，莉莉画眼睛，山姆粘尾巴。一开始龙看起来太小了，大家一起加了一条很长的尾巴。当龙挂上墙时，全班都鼓起掌来。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>Tom、Lily 和 Sam，还有他们的同学</td></tr>
+<tr><td>想要什么</td><td>想在演出前做好一条大红龙</td></tr>
+<tr><td>遇到问题</td><td>纸够用，时间却紧，龙一开始就做得太小</td></tr>
+<tr><td>如何解决</td><td>三个人分工合作，又给龙加了一条长尾巴</td></tr>
+<tr><td>结果与变化</td><td>龙挂上墙，全班鼓掌，孩子们体会到一起做事的力量</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>The class wants a dragon for the show. → They have paper but little time. → Tom cuts, Lily draws, and Sam glues. → The dragon looks too small at first. → They add a long tail together. → Everyone claps at the end.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>They add a long tail together.<br>The class wants a dragon for the show.<br>Everyone claps at the end.<br>Tom cuts, Lily draws, and Sam glues.</div>
+<div class="note"><b>关键词：</b>dragon / red paper / cut / draw / tail / clap</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读：Everyone claps when the dragon goes up on the wall.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补全：Tom cuts the ___. They add a ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 dragon / paper / tail / clap 按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看故事地图讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题独立讲，并说出自己和小伙伴合作做过的一件事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, the class wants ___.<br>Then, Tom cuts and Lily ___.<br>After that, they add ___.<br>Finally, everyone ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那条龙的视角讲：I am made of red paper and glue.<br>说感受：全班为什么鼓掌？从故事里找证据<br>新结局：如果只有汤姆一个人做，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db8">请你扮演一位来参观学校节日活动的家长，和我的孩子练习&quot;说节日与庆祝&quot;。规则：1）先问 What is your favourite festival?；2）再问 What do you do on that day?，要求说出两件具体的事；3）孩子说不出时给中文提示和句框 We ... together. / I will ...；4）重点练 We celebrate ... / We eat ... / I will invite ...；5）最后让孩子用英文邀请你参加他们的活动；6）全程中文辅助，不纠错音，鼓励他把细节说清楚。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db8").innerText,this)'>复制这段指令</button>
+</div>
+<div class="sect" id="placement"><h2>🎯 口语诊断与分级（起始层级测评）</h2>
+<div class="note"><b>测评条件：</b>四年级学生，1 对 1，15-18 分钟，中教或外教均可，用于入学分班或阶段复测</div>
+<div class="note"><b>低压力开场白（可直接念给孩子）：</b>这不是考试，说错也没关系。不知道的时候可以说 &quot;I am not sure&quot;，也可以请我换一种方式再问一次。我们就是聊聊天。</div>
+<h3>六段任务</h3><table><tr><th>任务</th><th>教师指令</th><th>支架递减</th><th>观察什么</th></tr>
+<tr><td>课堂指令</td><td>Please look at the timetable and tell me two subjects.</td><td>等待→重复→示范</td><td>能不能听懂多步指令</td></tr>
+<tr><td>个人回答</td><td>Which subject do you like best? Why?</td><td>等待→二选一→句框</td><td>能不能用完整句回答并给理由</td></tr>
+<tr><td>图片描述</td><td>Look at this picture. What is happening?</td><td>等待→What else?→关键词</td><td>能不能说出人物、动作、位置和一个推断</td></tr>
+<tr><td>互动问答</td><td>How often do you practise your hobby?</td><td>等待→追问 Why?→给句框</td><td>能不能回答并反问一句</td></tr>
+<tr><td>连续表达</td><td>Tell me about your day, from morning to evening.</td><td>等待→关键词→时间线句框</td><td>能不能按时间顺序连说 5 句</td></tr>
+<tr><td>情景任务</td><td>你在街上迷路了，请用英文向路人问路并听懂指路。</td><td>等待→角色扮演→示范</td><td>能不能完成一次完整的问路交际</td></tr>
+</table>
+<h3>六维表现记录（0–3 级）</h3><table><tr><th>维度</th><th>0级</th><th>1级</th><th>2级</th><th>3级</th></tr>
+<tr><td>指令理解</td><td>听不懂也不做</td><td>需要看别人做才跟着做</td><td>需要重复或示范后能做</td><td>立刻能做出反应</td></tr>
+<tr><td>句子完整度</td><td>只说单词或短语</td><td>能说简单完整句</td><td>能说带 because 的完整句</td><td>能说带 because 和细节的复合句</td></tr>
+<tr><td>互动回应</td><td>不回应</td><td>点头或只答一个词</td><td>能回答完整句</td><td>能回答并追问一句</td></tr>
+<tr><td>连续表达</td><td>说不出</td><td>说 1-2 句</td><td>能说 3-4 句</td><td>能说 5 句以上并按顺序连接</td></tr>
+<tr><td>任务完成</td><td>完不成</td><td>需要全程示范</td><td>需要少量提示</td><td>能基本独立完成</td></tr>
+<tr><td>独立程度</td><td>必须跟读</td><td>需要句框</td><td>需要关键词</td><td>只看图或问题就能说</td></tr>
+</table>
+<h3>内部起始层级 S1–S5</h3><table><tr><th>层级</th><th>含义</th></tr>
+<tr><td><b>S1</b></td><td>模仿表达：主要靠示范、图片和跟读，能跟说单词和短句</td></tr>
+<tr><td><b>S2</b></td><td>句框表达：能用固定句型完成熟悉问答，并能补上一个理由</td></tr>
+<tr><td><b>S3</b></td><td>互动表达：能回答、提问，并能围绕话题补充 2-3 句相关信息</td></tr>
+<tr><td><b>S4</b></td><td>连续表达：能围绕熟悉主题连续说 5-6 句并完成角色任务</td></tr>
+<tr><td><b>S5</b></td><td>迁移表达：能说明理由、比较选择，并在新情境里组织表达</td></tr>
+</table>
+<div class="note">这是机构内部层级，用于决定"从哪里开始学"，不等于剑桥、CEFR 或校内官方等级。</div>
+<h3>前 4 课建议</h3><table><tr><th>课次</th><th>口语目标</th><th>核心任务</th><th>支架</th><th>学习证据</th></tr>
+<tr><td>第1课</td><td>能说科目并给出理由</td><td>练 Which subject ...? 与 I like ... because ...</td><td>句框 + 课程表</td><td>能说 3 句带理由的英文</td></tr>
+<tr><td>第2课</td><td>能说一天的作息</td><td>用 usually / always / never 说四个习惯</td><td>时间轴 + 句框</td><td>能说 4 句并含一个频率词</td></tr>
+<tr><td>第3课</td><td>能描述天气与季节安排</td><td>用 It is ... 和 I ... when it is ...</td><td>天气图 + 关键词</td><td>能说 4 句并给一个推断</td></tr>
+<tr><td>第4课</td><td>能独立完成一次问路</td><td>问路→指路→道谢的完整角色扮演</td><td>句框递减</td><td>能在少量提示下完成 5 轮对话</td></tr>
+</table>
+<div class="note"><b>给家长的说明：</b>这次只是看看孩子现在&quot;能独立完成什么、需要什么帮助&quot;，不是打分，也不代表孩子的英语水平就定下来了。四年级孩子大多处在&quot;能答单句、但一被追问就卡&quot;的阶段，能给一个 because 理由，就已经是很实在的进步。我们前 4 课重点练科目与理由、作息与频率、天气与季节、问路交际，4 课后会用同样的任务再看一次，重点看孩子是不是更少依赖句框、更能自己补信息。</div>
+</div>
+<div class="sect" id="project"><h2>🗺️ 主题口语项目</h2>
+<div class="note"><b>校园英语小记者</b>（采访与播报）</div>
+<div class="note"><b>真实受众：</b>班级同学（录音在班级群里发布）</div>
+<div class="note"><b>驱动任务：</b>我们如何用英语采访三位同学，记录他们的一周生活和喜欢的校园一角，让听完的人愿意去看一看？</div>
+<div class="note"><b>最终口语作品：</b>一段 2-3 分钟的双人采访录音：提出并回答至少 6 个问题，覆盖科目、作息、爱好和天气，最后做一句总结</div>
+<table><tr><th>课次</th><th>里程碑</th><th>学生口语任务</th><th>支架</th><th>阶段证据</th></tr>
+<tr><td>1</td><td>Launch</td><td>听一段真实的英文采访，找出&quot;问了什么&quot;</td><td>示范录音</td><td>能说出采访里的 3 类问题</td></tr>
+<tr><td>2</td><td>Explore</td><td>从八个单元里选出要问的 6 个问题</td><td>问题清单模板</td><td>能写出 6 个完整问句</td></tr>
+<tr><td>3</td><td>Language workshop</td><td>练提问、追问与礼貌回应三组句框</td><td>句框 + 角色卡</td><td>能用句框完成 6 轮问答</td></tr>
+<tr><td>4</td><td>Rehearse</td><td>同伴互练，互相给出一条改进建议</td><td>关键词卡 + 计时</td><td>能在 2 分钟内完成 6 轮</td></tr>
+<tr><td>5</td><td>Publish</td><td>正式录制并向同学发布，回答两个追问</td><td>关键词卡</td><td>完成 2-3 分钟录音 + 2 个追问</td></tr>
+</table>
+<h3>小组角色（人人都要开口）</h3><table><tr><th>角色</th><th>口语职责</th><th>完成证据</th></tr>
+<tr><td>interviewer</td><td>负责提问并追问一句 Why?</td><td>能提出 6 个问题并追问 2 次</td></tr>
+<tr><td>interviewee</td><td>负责用完整句回答并补一个细节</td><td>每次回答不少于 2 句</td></tr>
+<tr><td>recorder</td><td>负责记录时间与同伴的进步</td><td>能说出同伴的一个具体进步</td></tr>
+</table>
+<div class="note"><b>语言支架包：</b>Can I ask you some questions about ___?<br>How often do you ___?<br>Could you say that again, please?<br>Thank you for telling me about ___.</div>
+<table><tr><th>维度</th><th>4级</th><th>3级</th><th>2级</th><th>1级</th></tr>
+<tr><td>任务完成</td><td>独立完成 6 轮问答并做总结</td><td>完成 6 轮但需提示</td><td>只完成 3-4 轮</td><td>只问不问、只答不问</td></tr>
+<tr><td>清晰表达</td><td>句子完整、对方能听懂</td><td>基本听懂、偶有卡壳</td><td>需重复才听懂</td><td>难以听懂</td></tr>
+<tr><td>互动回应</td><td>会追问也会补细节</td><td>能回答并偶有补充</td><td>只回答问句</td><td>只说单词</td></tr>
+<tr><td>减少支架</td><td>只看关键词卡就能说</td><td>看句框能说</td><td>需要老师带着说</td><td>只能跟读</td></tr>
+</table>
+<div class="note"><b>家长展示：</b>展示孩子那段 2-3 分钟的采访录音。说明这 5 次课练了什么、孩子从&quot;照着句框问&quot;到&quot;能自己追问一句&quot;的变化。不夸大：这是开口练习的成果，不代表孩子的英语水平已经达到某个等级。</div>
+</div>
+<div class="sect" id="feedback"><h2>💬 口语反馈助手（孩子 / 老师 / 家长三版）</h2>
+<div class="note"><b>本次目标：</b>本单元目标：能用 Go straight / Turn left 说出完整路线，并完成一次问路</div>
+<div class="note"><b>证据说明：</b>可以确认：句子是否完整、路线顺序是否正确、能不能回应追问。暂时无法判断：录音转写无法反映真实发音、语调和流利度。</div>
+<h3>给孩子的反馈</h3><table>
+<tr><th>你做到了</th><td>你今天用 Excuse me, how can I get to the museum? 开头，还把三个步骤按顺序说完了，这就是&quot;说得清楚&quot;的样子。</td></tr>
+<tr><th>小小升级点</th><td></td></tr>
+<tr><th>示范表达</th><td>Excuse me, how can I get to the museum? Go straight for two blocks. Turn left at the traffic lights. It is about ten minutes on foot.</td></tr>
+<tr><th>跟我再说一次</th><td>用这个句框再说一次：Excuse me, how can I get to ___? Go straight ___. Turn ___ at the ___. It is ___.</td></tr>
+<tr><th>下一次目标</th><td>下一次目标：不看句框，给同学指一次从教室到图书馆的路。</td></tr>
+</table>
+<h3>给老师的教学建议</h3><table>
+<tr><th>保留</th><td>保留：孩子开口前有礼貌用语，顺序也说得清楚。</td></tr>
+<tr><th>优先改进</th><td>优先改进：指路时还不会主动补上时间或距离。</td></tr>
+<tr><th>下一课动作</th><td>下一课动作：先口头补一句 It is about ... minutes，再录进采访稿。</td></tr>
+<tr><th>推荐支架</th><td>推荐支架：路线关键词卡（straight / left / lights / minutes）。</td></tr>
+<tr><th>继续观察</th><td>继续观察：在对方说快的时候，会不会主动请求再说一遍。</td></tr>
+</table>
+<h3>给家长的学习反馈</h3><table>
+<tr><th>本次任务</th><td>本次完成了&quot;向路人问路并听懂指路&quot;这个任务。</td></tr>
+<tr><th>孩子实际说出</th><td>孩子实际说出了：Excuse me, how can I get to the museum? Go straight and turn left.</td></tr>
+<tr><th>值得肯定的变化</th><td>最值得肯定的变化：从只问一句就停，到能把路线听完并复述。</td></tr>
+<tr><th>下一步只练</th><td>下一步只练一件事：每次指路都补上一句时间或距离。</td></tr>
+</table>
+<h3>3 分钟家庭开口练习</h3><ol class="sent"></ol>
+</div>
+<div class="sect" id="prompts"><h2>🤖 豆包 AI 陪练指令包</h2>
+<div class="note">复制下面任意一条，粘贴到豆包对话框即可开始陪练。</div>
+<h3>通用指令 1</h3><div class="prompt" id="g1">请你当我孩子的英语陪练。规则：一次只问一个问题，语速中等；孩子答完你先追问一句 Why? 或 How often?；答对了先用中文夸具体的地方，再说下一句；答不出先给中文提示，还不行就给完整句让他跟读两遍；每练 8 句用中文总结一次今天会说了什么；全程不批评、不纠正发音。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g1").innerText,this)'>复制</button>
+<h3>通用指令 2</h3><div class="prompt" id="g2">请你扮演我孩子班上的新同学，和他用英文聊天。每次只问一个问题，问完等他回答，并追问一句理由。他答不上来时，用中文给他两个选项让他选。聊满 10 个来回后，用中文告诉我他哪些句子说得好、哪些理由还说不完整。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g2").innerText,this)'>复制</button>
+<h3>通用指令 3</h3><div class="prompt" id="g3">请你当英语跟读老师。我发一句英文，你先用正常语速读一遍，再慢速读一遍，最后用中文解释意思。读完让孩子跟读三遍，你听完（我转述他的发音）给一句具体鼓励和一个小建议，不要说&quot;很好&quot;这种空话。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g3").innerText,this)'>复制</button>
+<h3>通用指令 4</h3><div class="prompt" id="g4">我们来玩&quot;图片描述&quot;游戏。我描述一张图片给你，你扮演老师，用 What is happening? / Where is it? / Why do you think so? 依次提问，每次只问一个，等孩子回答后再问下一个。孩子答不出时给句框，不要直接给答案。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g4").innerText,this)'>复制</button>
+<h3>通用指令 5</h3><div class="prompt" id="g5">请你当故事复述教练。我先讲一个英文小故事，你帮孩子按 First... Then... After that... Finally... 的顺序复述一次，然后让孩子照着说。孩子漏掉关键事件时，你用一个问题提示他，比如&quot;What happened after Tom made the plane?&quot;，不要直接告诉他。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g5").innerText,this)'>复制</button>
+<h3>通用指令 6</h3><div class="prompt" id="g6">请你给孩子做一次单元小测。围绕本单元的 8 句核心句，随机抽 5 句问他中文让他翻译成英文，或者你说英文让他翻译中文。每答完一题给一句具体反馈，并要求他补一个 because 理由。5 题结束后用中文总结：会了几句、哪两句还要再练、建议明天练什么。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g6").innerText,this)'>复制</button>
+</div>
+<footer>本产品由 AI 辅助整理、人工审校，仅供购买者个人学习使用，请勿转售或外传。</footer>
+</div><div class="toast" id="toast"></div>
+
+<script>
+function cp(t,btn){navigator.clipboard.writeText(t).then(()=>{
+  const o=btn.textContent;btn.textContent="已复制 ✓";setTimeout(()=>btn.textContent=o,1500);
+});}
+</script>
+
+</body></html>
